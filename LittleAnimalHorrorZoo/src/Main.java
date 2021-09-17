@@ -1,7 +1,9 @@
  // a program that deals with points.
 // (fourth version, to accompany encapsulated Point class)
 
-public class Main {
+
+
+ public class Main {
 
     public static void main(String[] args) {
         // create two Point objects
