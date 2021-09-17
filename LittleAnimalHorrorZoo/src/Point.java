@@ -2,12 +2,12 @@ import java.util.Objects;
 
 public class Point {
 
-   private int x;
-   private int y;
+    private int x;
+    private int y;
 
-   //constructs a new point at the origin, (0,0)
+    //constructs a new point at the origin, (0,0)
     public Point() {
-        this(0,0); // calls Point (int, int) constructor
+        this(0, 0); // calls Point (int, int) constructor
 
     }
 
@@ -30,7 +30,7 @@ public class Point {
     }
 
     // sets this point's (x,y) location to the given values
-    public void setLocation( int x, int y ) {
+    public void setLocation(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -44,16 +44,4 @@ public class Point {
     public void translate(int dx, int dy) {
         setLocation(x + dx, y + dy);
     }
-
-    /*@Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Point point = (Point) o;
-        return x == point.x && y == point.y;*/
-
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(x, y);
-    }
+}
