@@ -4,12 +4,35 @@
 
  public class Main {
 
-    public static void main(String[] args) {
-        // create two Point objects
-        Point p1 = new Point(1, 1);
-        Point p2 = new Point(10, 10);
+     public static void main(String[] args) {
+         // create two Point objects
+        /* Point p1 = new Point(1, 1);
+         Point p2 = new Point(10, 10);
+*/
 
+         Animal rabbit = new Animal("Rabbit", 1, 1);
+         Animal snake = new Animal("Snake", 10, 10);
 
+         boolean loop = true;
+
+         while (loop) {
+
+             //move animal
+             rabbit.moveAnimal();
+             System.out.println(rabbit);
+
+             if (snake.getX() - rabbit.getX() != 0) {
+                 snake.moveAnimal();
+                 System.out.println(snake);
+
+             } else {
+                 //If true and loop
+                 System.out.println("Snake and rabbit met each other");
+                 loop = false;
+             }
+
+         }
+/*
         System.out.println("I am rabbit, and I am now standing on square " + p1);
         System.out.println("I am the snake, and I am now standing on square " + p2);
 
@@ -33,7 +56,8 @@
 
 
         System.out.println(("The rabbit moves to ") + p1 + "\n" + ("The snake moves to ") + p2);
-    }
+   */
+ }
 }
 
 
