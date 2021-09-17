@@ -44,4 +44,5 @@ public class Point {
     public void translate(int dx, int dy) {
         setLocation(x + dx, y + dy);
     }
+    //deleted
 }
