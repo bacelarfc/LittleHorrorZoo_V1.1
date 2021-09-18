@@ -1,4 +1,6 @@
 public class Animal {
+    private String snake;
+    private String rabbit;
     private String name;
     private int x;
     private  int y;
@@ -33,7 +35,7 @@ public class Animal {
         this.y = y;
     }
 
-public void moveAnimal(){
+    public void moveAnimal(){
         if (getName().equals("Rabbit")) {
             setX(getX()+1);
             setY(getY()+1);
@@ -43,11 +45,11 @@ public void moveAnimal(){
             setY(getY()-1);
         }
 
-}
+    }
 
     @Override
     public String toString() {
-        return "I'm the rabbit " + name +
-                "and Im on " + x + "," + y;
+        return "I'm the " + name +
+                " and I'm on " + x + "," + y;
     }
 }
