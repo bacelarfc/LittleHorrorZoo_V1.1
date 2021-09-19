@@ -28,7 +28,7 @@
 
              }  else {
                  //If true and loop
-                 System.out.println("AAArrh I am eating you ha ha!");
+                 System.out.println("Hahaa! I the snake will now eat you!");
                  loop = false;
              }
              if ((snake.getX() == rabbit.getX() + 1 || snake.getX() == rabbit.getX() - 1) &&
