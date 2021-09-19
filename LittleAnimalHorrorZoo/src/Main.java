@@ -1,6 +1,5 @@
  // a program that deals with points.
-// (fourth version, to accompany encapsulated Point class)
- //Mubbi hererererereee
+
 
  public class Main {
 
