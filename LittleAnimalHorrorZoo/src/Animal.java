@@ -49,7 +49,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "I'm the " + name +
-                " and I'm on " + x + "," + y;
+        return "I am the " + name +
+                " and I'm now standing " + x + "," + y;
     }
 }

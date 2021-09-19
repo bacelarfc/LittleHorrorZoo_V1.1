@@ -28,16 +28,12 @@
 
              }  else {
                  //If true and loop
-                 System.out.println("Snake and rabbit met each other");
+                 System.out.println("AAArrh I am eating you ha ha!");
                  loop = false;
-             }
-             if (snake.getX() == rabbit.getX() && snake.getY() == snake.getY()) {
-                 System.out.println("I am going to eat you!!!!!!! ");
              }
              if ((snake.getX() == rabbit.getX() + 1 || snake.getX() == rabbit.getX() - 1) &&
                      (snake.getY() == rabbit.getY() + 1 || snake.getY() == rabbit.getY() - 1)) {
                  System.out.println("I am going VERY close and I am going to GET you!!!!!!! ");
-
              }
          }
 /*
