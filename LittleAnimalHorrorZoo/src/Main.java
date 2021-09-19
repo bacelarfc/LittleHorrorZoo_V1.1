@@ -13,6 +13,7 @@
          Animal rabbit = new Animal("Rabbit", 1, 1);
          Animal snake = new Animal("Snake", 10, 10);
 
+
          boolean loop = true;
 
          while (loop) {
@@ -25,12 +26,19 @@
                  snake.moveAnimal();
                  System.out.println(snake);
 
-             } else {
+             }  else {
                  //If true and loop
                  System.out.println("Snake and rabbit met each other");
                  loop = false;
              }
+             if (snake.getX() == rabbit.getX() && snake.getY() == snake.getY()) {
+                 System.out.println("I am going to eat you!!!!!!! ");
+             }
+             if ((snake.getX() == rabbit.getX() + 1 || snake.getX() == rabbit.getX() - 1) &&
+                     (snake.getY() == rabbit.getY() + 1 || snake.getY() == rabbit.getY() - 1)) {
+                 System.out.println("I am going VERY close and I am going to GET you!!!!!!! ");
 
+             }
          }
 /*
         System.out.println("I am rabbit, and I am now standing on square " + p1);
