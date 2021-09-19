@@ -1,5 +1,5 @@
  public class Main {
-/
+
     // main method
      public static void main(String[] args) {
          // instantiating animal objects with parameters
@@ -7,7 +7,6 @@
          Animal snake = new Animal("Snake", 10, 10);
 
          //while loop with hard coded true statement
-
          boolean loop = true;
          while (loop) {
 
