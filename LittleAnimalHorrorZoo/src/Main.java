@@ -1,6 +1,5 @@
  // a program that deals with points.
 
-
  public class Main {
 
      public static void main(String[] args) {
@@ -8,7 +7,6 @@
         /* Point p1 = new Point(1, 1);
          Point p2 = new Point(10, 10);
 */
-
          Animal rabbit = new Animal("Rabbit", 1, 1);
          Animal snake = new Animal("Snake", 10, 10);
 
