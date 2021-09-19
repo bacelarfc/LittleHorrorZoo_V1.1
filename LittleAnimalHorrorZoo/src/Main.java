@@ -1,5 +1,5 @@
  public class Main {
-/
+
     // main method
      public static void main(String[] args) {
          // instantiating animal objects with parameters
