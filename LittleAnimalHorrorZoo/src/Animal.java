@@ -1,26 +1,25 @@
 public class Animal {
 
     // instance fields or variables set private for encapsulation
-    private String snake;
-    private String rabbit;
-    private String name;
+
+    private String animalType;
     private int x;
     private  int y;
 
     // constructor method with arguments
-    public Animal(String name, int x, int y) {
+    public Animal(String type, int x, int y) {
         // assign parameter value to instance field
-        this.name = name;
+        this.animalType = type;
         this.x = x;
         this.y = y;}
 
     // getters and setters
-    public String getName() {
-        return name;
+    public String getAnimalType() {
+        return animalType;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAnimalType(String animalType) {
+        this.animalType = animalType;
     }
 
     public int getX() {
@@ -41,7 +40,7 @@ public class Animal {
 
     // method for moving animal objects with one position at a time
     public void moveAnimal(){
-        if (getName().equals("Rabbit")) {
+        if (getAnimalType().equals("Rabbit")) {
             setX(getX()+1);
             setY(getY()+1);
         }
@@ -55,7 +54,7 @@ public class Animal {
     // creating custom toString method with 'override'-ing JAVA default method
     @Override
     public String toString() {
-        return "I am the " + name +
+        return "I am the " + animalType +
                 " and I'm now standing on square " + x + "," + y;
     }
 }
