@@ -1,8 +1,7 @@
 public class Animal {
 
     // instance fields or variables set private for encapsulation
-    private String snake;
-    private String rabbit;
+
     private String animalType;
     private int x;
     private  int y;
